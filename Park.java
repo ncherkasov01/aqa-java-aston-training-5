@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //task 3 solution
 public class Park {
     private String name;
@@ -18,10 +20,22 @@ public class Park {
             this.workTime = workTime;
             this.cost = cost;
         }
+
+        @Override
+        public String toString() {
+            return "Park{"
+                    + "name='" + name + '\''
+                    + "location='" + location + '\''
+                    + "attractionName='" + attractionName + '\''
+                    + "workTime='" + workTime + '\''
+                    + "cost='" + cost + '\''
+                    + '}';
+        }
     }
 
     public static void main(String[] args) {
         Park sokol = new Park("sokol", "Moscow");
         Park.ParkDescribtion sokolDescribtion = sokol.new ParkDescribtion("koleso", "9to6", 100);
+        System.out.println(sokolDescribtion);
     }
 }

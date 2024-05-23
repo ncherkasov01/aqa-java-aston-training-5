@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //task 1 solution
 public class Employee {
 
@@ -19,6 +21,20 @@ public class Employee {
         this.mobileNumber = mobileNumber;
         this.salary = salary;
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{"
+                + "firstName='" + firstName + '\''
+                + "lastName='" + lastName + '\''
+                + "middleName='" + middleName + '\''
+                + "jobTitle='" + jobTitle + '\''
+                + "email='" + email + '\''
+                + "mobileNumber='" + mobileNumber + '\''
+                + ", salary=" + salary + '\''
+                + ", age=" + age
+                + '}';
     }
 
     public void showMeEmployee() {
